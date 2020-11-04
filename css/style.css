@@ -12,7 +12,7 @@ header{
 	flex-direction: column;
 }
 #logo{
-	width: 35vw;
+	width: min(35vw, 150px);
 	margin: 0 auto;
 }
 #logo img{
@@ -22,8 +22,12 @@ nav{
 	width: 100vw;
 	display: flex;
 }
+
+nav ul {
+	margin: 0 auto;
+	display: flex;
+}
 nav ul li{
-	float: right;
 	list-style: none;
 
 }
@@ -217,3 +221,56 @@ font-size: 20px;
 
 
 /* Fim da Sessão Valores*/
+
+
+/* responsividade */
+
+@media screen and (min-width: 800px) {
+
+header, header *{
+	all: unset;
+}
+
+body::before {
+	content: "";
+	display: block;
+	top: 0;
+	height: 100px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	box-sizing: border-box;
+	display: block;
+	height: 100px;
+	width: 100%;
+	padding: 0 50px;
+	background-color: #f8f6f6;
+}
+
+#logo{
+	display: flex;
+	height: 100px;
+	float: left;
+	width: 0;
+}
+
+#logo img {
+	margin: auto 0;
+	width: unset;
+	height: 75px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	float: right;
+	height: 100px;
+}
+
+nav ul li {
+	margin: 0 25px;
+}
+
+}
