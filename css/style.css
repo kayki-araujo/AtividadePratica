@@ -97,3 +97,67 @@ font-size: 20px;
 #banco-dados{
 	border-top: 8px solid #5858dd;
 }
+
+/* Começo da Sessão Planos*/
+
+
+#plano-bronze {
+	border-style: solid;
+	border-width: 15px 0;
+	border-color: #c59b12;
+}
+
+#plano-prata {
+	border-style: solid;
+	border-width: 15px 0;
+	border-color: #f6eff0;
+}
+
+#plano-ouro {
+	border-style: solid;
+	border-width: 15px 0;
+	border-color: #f1f115;
+}
+
+#planos h2 {
+	background-color: #eee8e8;
+	border: solid black 0.5px;
+	text-align: center;
+	padding: 8px 0;
+	font-weight: bold;
+}
+
+#planos span{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 900;
+	font-family: sans-serif;
+	padding: 0 20px;
+}
+
+#plano-bronze span {
+	background-color: #c59b12;
+}
+
+#plano-prata span {
+	background-color: #f6eff0;
+}
+
+#plano-ouro span {
+	background-color: #f1f115;
+}
+
+#planos ul{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	height: 300px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* Fim da Sessão Planos*/
