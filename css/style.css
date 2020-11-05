@@ -80,7 +80,7 @@ font-size: 20px;
 /* Inicia a sessão curso */
 
 #cursos .content div{
-	width: 80vw;
+	width: min(80vw,300px);
 	margin-top:20px;
 }
 #cursos .content div h2{
@@ -214,8 +214,8 @@ font-size: 20px;
 
 }
 
-#meio-ambiente h2 {
-	border-color: green;
+#tecnologia h2 {
+	border-color: #32c5fd;
 
 }
 
@@ -241,6 +241,7 @@ body::before {
 header {
 	position: fixed;
 	top: 0;
+	z-index: 2;
 	box-sizing: border-box;
 	display: block;
 	height: 100px;
@@ -249,7 +250,7 @@ header {
 	background-color: #f8f6f6;
 }
 
-#logo{
+#logo {
 	display: flex;
 	height: 100px;
 	float: left;
@@ -271,6 +272,131 @@ nav {
 
 nav ul li {
 	margin: 0 25px;
+	cursor: pointer;
 }
 
+#sobre .content {
+	display: flex;
+	flex-direction: row;
+}
+
+#inf {
+	text-align: center;
+	padding: 0 15px;
+}
+
+#inf-img {
+	width: 100%;
+	padding: 0 15px;
+
+}
+
+#cursos .content {
+	display: flex;
+	flex-direction: row;
+}
+
+#cursos .content div {
+	width: 100%;
+	margin: 0 10px;
+}
+
+#planos h2 {
+	margin: 0 20px;
+}
+
+#planos ul {
+	background-color: white;
+	margin: 0 15px;
+	padding: 0 15px;
+}
+
+#planos .content {
+	display: flex;
+	flex-direction: row;
+}
+
+#planos .content .item {
+	position: relative;
+	height: 700px;
+}
+
+#plano-bronze {
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	background-color: #c59b12;
+}
+
+#plano-prata {	
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	background-color: #f6eff0;
+}
+
+#plano-ouro {	
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	background-color: #f1f115;
+}
+
+#planos .content > div {
+	margin: 0 10px;
+}
+
+#plano-bronze::after,
+#plano-prata::after,
+#plano-ouro::after {
+	content: "Contratar";
+	position: relative;
+	display: block;
+	background-color: white;
+	padding: 10px;
+	width: 100px;
+	left: 50%;
+	text-align: center;
+	border-radius: 5px;
+	border: solid rgba(0,0,0,0.5) 0.5px;
+	transform: translateX(-50%);
+}
+
+#plano-bronze ul{
+	height: 300px;
+}
+
+#plano-prata ul {
+	height: 400px;
+}
+
+#plano-ouro ul {
+	height: 500px;
+}
+
+#valores .content {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+}
+
+/* Fim da Responsividade*/
+
+/* Footer*/
+
+footer {
+	display: flex;
+	position: relative;
+	bottom: 0;
+	display: block;
+	height: 30px;
+	background-color: #f8f6f6;
+}
+
+footer p {
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.2rem;
 }
